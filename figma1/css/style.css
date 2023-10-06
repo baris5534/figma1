@@ -1,0 +1,511 @@
+/* Genel Atamalar */
+    /* Yazı Fontu */
+@font-face {
+    font-family: 'AvenirLTPro45';
+    src: url('../font/Avenir LT Std 45 Book.otf') format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AvenirLTPro95';
+    src: url('../font/Avenir\ LT\ Std\ 95\ Black.otf') format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AvenirLTPro55';
+    src: url('../font/Avenir\ LT\ Std\ 55\ Roman.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+    /* Yazı Fontu */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: inline-flexbox;
+    justify-content: center;
+}
+header{
+    width: 100%;
+    display: flexbox;
+    justify-content: center;
+}
+.fontfm55{
+    font-family: 'AvenirLTPro55';
+}
+.fontfm45{
+    font-family: 'AvenirLTPro45';
+}
+.fontfm95{
+    font-family: 'AvenirLTPro95';
+}
+.container-ana{
+    width: 1440px;
+    margin: auto;
+    align-items: center;
+}
+/* Yazı Boyutu */
+.font12{
+    font-size: 12px;
+}
+.font14{
+    font-size: 14px;
+}
+.font20{
+    font-size: 20px;
+}
+.font32{
+    font-size: 32px;
+}
+.font36{
+    font-size: 36px;
+}
+/* Yazı Boyutu */
+.font800{
+    font-weight: 800;
+}
+/* Renkler */
+.color1{
+    color: #1E1E1E;
+    opacity: 40%;
+}
+.color2{
+    color: #1E1E1E;
+    opacity: 100%;
+}
+.color3{
+    color: #fff;
+}
+.color4{
+    background-color: #44593A;
+}
+/* Renkler */
+/* Genişlikler */
+.wid2{
+    width: 380px;
+}
+.wid3{
+    width: 480px;
+}
+.hei2{
+    height: 58px;
+}
+/* Genişlikler */
+/* Diğerleri */
+.dis-flex{
+    display: flex;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.disp-grid{
+    display: grid;
+}
+.m-right{
+    margin-left: 50%;
+}
+.index1{
+    z-index: 1;
+}
+.index2{
+    z-index: 2;
+}
+.ali-center{
+    display: flex;
+    align-items: center;
+}
+.mar-t-15{
+    margin-top: 15px;
+}
+.mar-t-30{
+    margin-top: 30px;
+}
+.jus-bet{
+    display: flex;
+    justify-content: space-between;
+}
+.padd20{
+    padding: 0px 20px;
+}
+.padd-t-170{
+    padding-top: 170px;
+}
+.padd-t-105{
+    padding-top: 105px;
+}
+.padd-r-50{
+    margin-left: -100px;
+}
+.dis-blk{
+    display: block;
+}
+.mar-t-20{
+    margin-top: 20px;
+}
+.mar20{
+    margin: 0px 55px;
+}
+.mar30{
+    margin: 0px 80px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+/* Diğerleri */
+/* Genel Atamalar*/
+
+
+/* Navbar*/
+.rectangle{
+    width: 100%;
+    height: 10px;
+    background-color: #44593A;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.navbar{
+    max-width: 1440px;
+    max-height: 75px;
+    align-items: center;
+}
+.navbar .container-ana{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 127px;
+    height: 59px;
+    padding-left: 130p;
+    padding-top: 30px;
+}
+.nav-li{
+    width: 534px;
+    margin-top: 43px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-li ul li{
+    list-style: none;
+    display: inline;
+    padding: 0px 20px;
+    font-size: 12px;
+}
+.nav-li li :hover{
+    color: blue;
+    text-decoration: soli;
+}
+.nav-li  a{
+    text-decoration: none;
+}
+.nav-li li a :checked{
+    color: #1E1E1E;
+    opacity: 100%;
+}
+.cnt{
+    margin-top: 38px;
+}
+.cnt a{
+    padding: 15px 30px;
+    margin: 38px;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #44593A;
+}
+.cntbtn{
+    margin-top: 38px;
+    align-items: center;
+}
+/* Navbar */
+
+/* cont1 kısmı */
+.contwd p{
+    width: 500px;
+    height: 86px;
+}
+.contwd2 p{
+    width: 480px;
+    height: 84px;
+    margin-top: 30px;
+}
+.cont1{
+    margin: auto 40px;
+    margin-top: 190px;
+    display:flex;
+    justify-content: space-around;  
+}
+.cont1 .container-ana{
+    display: flex;
+    justify-content: space-between;
+}
+.contbtn{
+    display: block;
+    margin-top: 30px;
+}
+.contbtn a{
+    background-color: #44593A;
+    color: #fff;
+    text-decoration: none;
+    padding:20px 30px ;
+    border-radius: 5px;
+}
+.contp{
+    margin-top: 60px;
+    display: block;
+}
+/* cont1 kısmı */
+
+/* text-h-p kısmı */
+.text-h-p{
+    width: 100%;
+    height: 315px;
+    background-color: #44593A;
+    margin-top: 197px;
+    align-items: center;
+}
+.text-h-p .container-ana{
+    width: 1440px;
+}
+.texts-h{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-box{
+    width: 380px;
+    margin-top: 85px;
+    text-align: left;
+}
+/* text-h-p kısmı */
+
+/* nature kısmı */
+.nature{
+    display: flex;
+    justify-content: center;
+}
+.nature .container-ana{
+    width: 1440px;
+}
+.nature-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    margin-top: 115px;
+}
+.nature img{
+    padding: 15px 15px 45px 15px;
+    background-color: #f5f5f5;
+}
+.img-bg{
+    width: 380px;
+    height: 410px;
+}
+.img-border{
+    border-radius: 4px;
+}
+/* nature kısmı */
+
+/* ucluresim kısmı */
+.uclutext{
+    padding-left: 100px;
+}
+.uclursm{
+    display: grid;
+    margin-top: 270px;
+}
+.uclursm a{
+    color: #44593A;
+}
+.uclu{
+    padding-left: 50px;
+}
+.uclu img{
+    position: absolute;
+    grid-row: 1 / 3;
+}
+
+/* ucluresim kısmı */
+
+/* Slider kısmı */
+.slider-container {
+    display: flex;
+    overflow: hidden;
+    max-width: 1540px;
+    height: 450px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-slide {
+    max-width: 380px;
+    flex: 0 0 80%;
+    transition: transform 0.5s ease;
+    background-color: #44593A;
+    padding: 20px;
+    border-radius: 5px;
+}
+.card-slide img {
+    width: 80px;
+    height: 80px;
+}
+.card-slide .slide-p{
+    padding: 25px 25px 0px 25px;
+}
+.name{
+    width: 80%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin: 20px 10px;
+    align-items: center;
+    margin-top:90px;
+    color: #fff;
+    
+}
+.name p{
+    padding: 5px 10px;
+}
+#nextBtn:hover,#prevBtn:hover, #centerBtn:hover {
+    background-color: #717171;
+}
+ #nextBtn:focus,#prevBtn:focus, #centerBtn:focus{
+    background-color: #717171;
+    width: 30px;
+    border-radius: 20px;
+} 
+
+.active {
+    background-color: #717171;
+    width: 30px;
+    border-radius: 20px;
+}
+.sliderbtn{
+    width: 100%;
+    margin-top: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#nextBtn, #prevBtn, #centerBtn{
+    border: 0px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0px 2px;
+    align-items: center;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease; 
+}
+/* Slider kısmı */
+
+/* footer kısmı */
+footer{
+    width: 100%;
+    height: 470px;
+    background-color: #44593A;
+    display: flex;
+    justify-content: center;
+    margin-top: 230px;
+}
+footer ul li{
+    list-style: none;
+    padding-top: 14px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.footli ul{
+    margin: auto;
+    margin-right: 50px;
+    margin-top: -100px;
+}
+.footli h4{
+    padding: 15px 0px;
+}
+.footli{
+    display: flex;
+}
+footer .container-ana{
+    display: flex;
+    justify-content: space-between;
+}
+.phones{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.phones p{
+    padding: 20px 20px 0px 20px;
+
+}
+.icon1{
+    background-size: 20px;
+    background-image: url(../images/user.png);
+}
+.icon2{
+    background-size: 25px;
+    background-image: url(../images/icons8-whatsapp-48.png);
+}
+.phones input{
+    margin-top: 20px;
+    padding: 20px 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #1E1E1E;
+    background-position: 20px;
+    background-repeat: no-repeat;
+}
+::placeholder{
+    color: #1E1E1E;
+    opacity: 40%;
+    /* position: 10px; */
+    text-align: left;
+}
+.phones button{
+    margin-top: 20px;
+    padding: 15px 120px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border:1px #fff solid;
+    background-color: #44593A;
+}
+.phones a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+footer .container{
+    align-items: center;
+}
+.footalt{
+    width: 100%;
+    height: 100px;
+    background-color: #354130;
+    text-align: center;
+    margin: aut;
+}
+.footalt p{
+    padding: 41px 0px;
+}
+
+/* footer kısmı */
+
