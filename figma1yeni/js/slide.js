@@ -1,11 +1,11 @@
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 const cards = document.querySelectorAll('.card-slide');
-let currentIndex = 1;
+let currentIndex = 4;
 
 function showCard(index) {
     cards.forEach((card, i) => {
-        card.style.transform = `translateX(${50 * (i - index)}%)`;
+        card.style.transform = `translateX(${30 * (i - index)}%)`;
     });
 }
 
@@ -15,7 +15,7 @@ prevBtn.addEventListener('click', () => {
 });
 
 nextBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % cards.length;
+    currentIndex = (currentIndex + 2) % cards.length;
     showCard(currentIndex);
 });
 
@@ -61,9 +61,46 @@ $(".prev-slide").click(function() {
 plusSlides(-1);
 });
 $(".next-slide").click(function() {
-plusSlides(1);
+plusSlides(2);
 });
 function plusSlides(n) {
 showSlides(slideIndex += n);
 }
 //Next and previous buttons end
+
+
+
+
+
+// $(document).ready(function(){
+//     $('.wrapper').owlCarousel({
+//         items:1,
+//     })
+// })
+{/* <script>
+      $(".slider").owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000, //2000ms = 2s;
+        autoplayHoverPause: true,
+      });
+   </script> */}
+   document.getElementById('next').onclick = function(){
+    const widthItem = document.querySelector('.item').offsetWidth;
+    document.getElementById('formList').scrollLeft += widthItem;
+}
+document.getElementById('prev').onclick = function(){
+    const widthItem = document.querySelector('.item').offsetWidth;
+    document.getElementById('slide3').scrollLeft -= widthItem;
+}
+
+
+// var slider = 
+// document.getElementById(".card-slide");
+
+// function handleSliderChange(){
+//     var value = slider.value;
+//     console.log("Slider değeri: " + 3);
+// }
+
+// slider.addEventListener("input" , handleSliderChange);
